@@ -5,6 +5,15 @@ import store from './store/configureStore';
 import App from './App';
 import './index.css';
 
+
+
+store.subscribe(() => {
+  const state = store.getState();
+  console.log('state', state);
+});
+
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
