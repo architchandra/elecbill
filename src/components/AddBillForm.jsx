@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-class AddExpenseForm extends React.Component {
+class AddBillForm extends React.Component {
   constructor(props) {
     super(props);
 
@@ -30,10 +30,10 @@ class AddExpenseForm extends React.Component {
         <form>
           {this.fields.map(field => (
             <div key={field.id}>
-              <label htmlFor={'expense-' + field.id}>
+              <label htmlFor={'bill-' + field.id}>
                 {field.label}
               </label>
-              <input id={'expense-' + field.id} type={field.type} />
+              <input id={'bill-' + field.id} type={field.type} />
             </div>
           ))}
         </form>
@@ -44,4 +44,4 @@ class AddExpenseForm extends React.Component {
 
 
 
-export default AddExpenseForm;
+export default AddBillForm;

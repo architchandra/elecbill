@@ -1,11 +1,11 @@
 import { createStore, combineReducers } from '@reduxjs/toolkit';
-import expensesReducer from '../reducers/expensesReducer';
+import billsReducer from '../reducers/billsReducer';
 import peopleReducer from '../reducers/peopleReducer';
 
 
 
 const store = createStore(combineReducers({
-  expenses: expensesReducer,
+  bills: billsReducer,
   people: peopleReducer,
 }));
 export default store;
