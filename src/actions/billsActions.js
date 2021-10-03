@@ -2,15 +2,14 @@ import { nanoid } from 'nanoid';
 
 
 
-const addBill = (title = '', amount = 0, createdAt = 0, payers = [], settlers = []) => ({
+const addBill = (month = '', amount = 0, units = 0, createdAt = 0) => ({
   type: 'ADD_BILL',
   bill: {
     id: nanoid(),
-    title,
+    month,
     amount,
+    units,
     createdAt,
-    payers,
-    settlers,
   },
 });
 
