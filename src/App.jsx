@@ -1,4 +1,5 @@
 import React from 'react';
+import AddExpenseForm from './components/AddExpenseForm';
 import BillDetails from './components/BillDetails';
 import SplitConfig from './components/SplitConfig';
 import Result from './components/Result';
@@ -10,9 +11,7 @@ const App = () => (
     <h1>
       Electricity Bill Splitter
     </h1>
-    <BillDetails amount={100} />
-    <SplitConfig peopleCount={4} />
-    <Result amount={100} peopleCount={4} />
+    <AddExpenseForm />
   </div>
 );
 export default App;
